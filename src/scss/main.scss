@@ -1,0 +1,189 @@
+@use "mixins" as m;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+.container {
+    background-image: url(/src/images/negative-space-black-forest-dawn.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+h1 {
+    font-size: 30px;
+}
+.containerText p {
+    font-size: 25px;
+    @include m.mobile {
+        font-size: 20px;
+    }
+}
+
+.containerText h1, p {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+}
+
+.containerText {
+    padding-top: 180px;
+}
+header {
+    display: flex;
+    justify-content: end;
+    background-color: rgba(255,255,255,0.1);
+}
+
+nav {
+    margin-right: 20px;
+}
+ul {
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    gap: 35px;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    text-decoration: underline;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+.team {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include m.mobile {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+}
+.teamMembers {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    @include m.mobile {
+        width: 100%;
+    }
+}
+img {
+    border-radius: 50%;
+    width: 50%;
+    box-shadow: 0 0 45px 0 rgba(0,0,0,0.6);
+}
+h3 {
+    text-align: center;
+    color: black;
+}
+.teamMembers p {
+    width: 70%;
+    height: fit-content;
+    color: black;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 30px;
+    line-height: 2em;
+    gap: 2px;
+}
+.teamMembers span {
+    font-size: 15px;
+}
+.teamMembers i {
+    color: black;
+    font-size: 30px;
+}
+.arrowIcon {
+    display: flex;
+    justify-content: center;
+    bottom: 1em;
+    font-size: 1.8em;
+    padding: 170px;
+}
+.arrowIcon i {
+    color: white;
+}
+
+.contact {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    @include m.mobile{
+        height: 500px;
+    }
+}
+.footerContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    @include m.mobile {
+        flex-direction: column;
+        width: auto;
+    }
+}
+.footerContainer2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+.footerContainer2 span {
+    padding: 5px;
+    display: block;
+}
+.footerContainer2 i {
+    margin-right: 15px;
+
+}
+.Social {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.SocialIcons {
+    display: flex;
+    flex-direction: column;
+}
+.contactIcon {
+    font-size: 30px;
+    margin-bottom: 18px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
+.contactIcon i {
+    color: black;
+}
